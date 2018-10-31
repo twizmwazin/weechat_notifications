@@ -29,5 +29,6 @@ def message(data, bufferp, tm, tags, display, is_hilight, prefix, msg):
         bot.send_message(chat_id=SET CHAT ID, text=mes)
     return weechat.WEECHAT_RC_OK
 
-weechat.hook_print("", "", "", 1, "message", "") # catch all messages
+# catch all messages
+weechat.hook_print("", "", "", 1, "message", "")
 
